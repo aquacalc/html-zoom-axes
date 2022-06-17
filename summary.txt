@@ -1,0 +1,35 @@
+1.  Set the dimensions
+     * svgWidth & svgHeight: whole chart area
+     * the margins (with enough top & left for pH isolpleth labels)
+     * width & height: content area (without the axes?)
+
+2.  Build the svg
+     * append to the parent div
+     * set whole chart area: svgWidth & svgHeight
+     * APPEND a <g> translated by the top & left margins
+
+3.  Add the x- and y-axes
+     * xScale range: [0, width]
+     * yScale range: [height, 0]
+     * APPEND another <g> to the svg for each axis
+     (* translate xAxis by (0, height) -- why?)
+     * call each axis with its -Scale
+
+4.  Define the clip path (the drawing area)
+     * append clip path to the svg
+     * give it an id (like "clipRect")
+     * append a <rect> to the svg
+     * give it width, height, & [x, y,] -> [0, 0]
+
+5a. Create the region that holds the content -- the data
+     * append another <g> to the svg
+    (* give it an id in dev to give it a visible border)
+     * add the clip path as "url(#id-of-clipRect)"
+
+5b. Add the content/data
+     ...selectAll...merge...append...scale...
+
+6.  Define zoom behavior
+     * zoom()
+     * scaleExtent()
+     * [NB] extent && translateExtent

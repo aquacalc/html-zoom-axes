@@ -1,0 +1,26 @@
+#dataviz_axisZoom {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.small {
+  text-align: center;
+}
+
+#my-clip-path {
+  outline: solid 3px blue;
+  outline-offset: 0px;
+}
+
+#invisible-rect {
+  outline: solid 2px red;
+  outline-offset: 0px;
+}
+
+/* Doesn't select g#my-clip-path for hovering */
+/* see: https://stackoverflow.com/questions/43000645/idhover-id-in-css-is-it-possible */
+/* g#my-clip-path:hover {
+  cursor:pointer;
+  outline-color: red;
+  background-color: rgb(208, 175, 241);
+} */
