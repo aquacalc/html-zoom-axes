@@ -33,3 +33,14 @@
      * zoom()
      * scaleExtent()
      * [NB] extent && translateExtent
+     * .on('zoom', updateChart)
+
+7.  Create the 'invisible' <rect> to catch mouse events
+     * set width & height
+     * translate ... 0, 0
+     * CALL(ZOOM)
+
+8.  Re-Scale the chart elements
+
+
+^^^ How correctly translate this to Svelte? ^^^
