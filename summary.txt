@@ -41,6 +41,11 @@
      * CALL(ZOOM)
 
 8.  Re-Scale the chart elements
+     * apply the transform object to the rescale* function
+     * pass the *Scale to rescale*()
+     * call each axis on the new scale
+     * -- RE-SCALE the objects in the containing area
+       -- which is tied to the clipRect
 
 
 ^^^ How correctly translate this to Svelte? ^^^

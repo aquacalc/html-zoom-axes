@@ -14,11 +14,25 @@ const myData = [
     Sepal_Width: "3.2",
     Species: "versicolor",
   },
-  // [NB] Next is dummy data //
+  // [NB] Next three are dummy data //
   {
     Petal_Length: "6.0",
     Petal_Width: "1.8",
     Sepal_Length: "6.0",
+    Sepal_Width: "2.2",
+    Species: "versicolor",
+  },
+  {
+    Petal_Length: "3.0",
+    Petal_Width: "1.8",
+    Sepal_Length: "3.5",
+    Sepal_Width: "2.2",
+    Species: "versicolor",
+  },
+  {
+    Petal_Length: "4.5",
+    Petal_Width: "1.8",
+    Sepal_Length: "4.5",
     Sepal_Width: "2.2",
     Species: "versicolor",
   },
